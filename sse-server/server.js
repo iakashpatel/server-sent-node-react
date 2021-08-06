@@ -34,6 +34,9 @@ function eventsHandler(request, response, next) {
     rooms[roomId] = {};
     rooms[roomId][clientId] = newClient
     console.log('client connected:', clientId, 'in room:', roomId);
+  } else {
+    rooms[roomId][clientId] = newClient
+    console.log('client connected:', clientId, 'in room:', roomId);
   }
 
 

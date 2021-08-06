@@ -37,9 +37,9 @@ function App() {
       </thead>
       <tbody>
         {
-          notifications.map((fact, i) =>
+          notifications.map((item, i) =>
           <tr key={i}>
-              <td>{fact.text}</td>
+              <td>{item.text}</td>
             </tr>
           )
         }
